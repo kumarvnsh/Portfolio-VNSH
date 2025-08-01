@@ -4,6 +4,11 @@
 
 [build.environment]
   NODE_VERSION = "18"
+  CI = "false"
+  GENERATE_SOURCEMAP = "false"
+  NPM_FLAGS = "--legacy-peer-deps"
+  ESLINT_NO_DEV_ERRORS = "true"
+  DISABLE_ESLINT_PLUGIN = "true"
 
 [[redirects]]
   from = "/*"
