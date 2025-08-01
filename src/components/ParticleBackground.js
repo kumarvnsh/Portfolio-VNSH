@@ -121,6 +121,12 @@ const ParticleBackground = () => {
             ctx.closePath();
             ctx.fill();
             break;
+          default:
+            // Default case for any other shape types
+            ctx.beginPath();
+            ctx.arc(0, 0, this.size, 0, Math.PI * 2);
+            ctx.fill();
+            break;
         }
         ctx.restore();
       }

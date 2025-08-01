@@ -226,7 +226,7 @@ const SkillTree = () => {
       window.removeEventListener('resize', resizeCanvas);
       cancelAnimationFrame(animationFrameId);
     };
-  }, []);
+  }, [skills]);
 
   return (
     <section id="skills" className="game-section">
@@ -240,8 +240,7 @@ const SkillTree = () => {
               height: '600px',
               borderRadius: '12px',
               cursor: 'pointer',
-              maxWidth: '100%',
-              height: 'auto'
+              maxWidth: '100%'
             }}
           />
           <div className="skill-legend">
